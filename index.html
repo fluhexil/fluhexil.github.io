@@ -10,15 +10,15 @@
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
   :root{
-    --bg: #f5f6fb;
-    --surface: #ffffff;
+    --bg: #eae7f9;
+    --surface: #fbfaff;
     --ink: #14152b;
     --muted: #5c5f7a;
-    --line: #e6e7f2;
+    --line: #e2ddf5;
     --violet: #6c5ce7;
     --cyan: #00c2b3;
-    --violet-soft: #efecfe;
-    --cyan-soft: #e3faf7;
+    --violet-soft: #e8e3fc;
+    --cyan-soft: #dbf5f1;
     --ring: rgba(108,92,231,0.35);
   }
 
@@ -28,7 +28,11 @@
 
   body{
     margin:0;
-    background: var(--bg);
+    background:
+      radial-gradient(circle at 15% 8%, rgba(108,92,231,0.10) 0%, transparent 45%),
+      radial-gradient(circle at 85% 0%, rgba(0,194,179,0.10) 0%, transparent 40%),
+      linear-gradient(180deg, #e9e6f8 0%, #eae8f6 100%);
+    background-attachment: fixed;
     color: var(--ink);
     font-family: 'Inter', sans-serif;
     line-height: 1.6;
@@ -147,7 +151,16 @@
     border-radius: 16px;
     padding: 32px 36px;
     margin-bottom: 20px;
-    box-shadow: 0 12px 24px -18px rgba(20,21,43,0.25);
+    box-shadow: 0 16px 32px -18px rgba(108,92,231,0.28);
+    position: relative;
+    overflow: hidden;
+  }
+  .card::before{
+    content:"";
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--violet), var(--cyan));
   }
 
   .card h2{
@@ -218,6 +231,16 @@
     font-size: 12px;
     color: var(--muted);
   }
+  .prof-link{
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 1px dashed transparent;
+    transition: border-color 0.15s ease;
+  }
+  .prof-link:hover{
+    text-decoration: none;
+    border-bottom-color: var(--muted);
+  }
 
   /* network / links list */
   .people, .link-list{
@@ -227,32 +250,22 @@
   .person, .plain-link{
     display: flex;
     align-items: center;
-    gap: 12px;
-    padding: 12px 14px;
+    padding: 13px 18px;
     border-radius: 10px;
     background: var(--cyan-soft);
     border: 1px solid #d3f2ee;
+    border-left: 3px solid var(--cyan);
     font-size: 14.5px;
     font-weight: 500;
     color: var(--ink);
-    transition: background 0.15s ease;
+    transition: background 0.15s ease, border-left-color 0.15s ease;
+  }
+  .plain-link{
+    border-left-color: var(--violet);
   }
   .person:hover, .plain-link:hover{
     background: #d3f2ee;
     text-decoration: none;
-  }
-  .avatar{
-    width: 30px; height: 30px;
-    border-radius: 50%;
-    background: linear-gradient(135deg, var(--violet), var(--cyan));
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Space Grotesk', sans-serif;
-    font-size: 12px;
-    font-weight: 700;
-    flex-shrink: 0;
   }
 
   footer{
@@ -331,32 +344,32 @@
   <section class="card">
     <h2>Cursos</h2>
     <div class="courses">
-      <div class="course-tag"><span class="name">Redacción y Técnicas de Comunicación Efectiva</span><span class="prof">Ana Eylin Coronel Tello</span></div>
-      <div class="course-tag"><span class="name">Métodos de Estudio Universitario</span><span class="prof">Miryam Milagros Cosme Félix</span></div>
-      <div class="course-tag"><span class="name">Desarrollo Personal y Liderazgo</span><span class="prof">Luz Basualdo Porras</span></div>
-      <div class="course-tag"><span class="name">Cálculo I</span><span class="prof">Edwin Marcos Maraví Percca</span></div>
-      <div class="course-tag"><span class="name">Álgebra y Geometría Analítica</span><span class="prof">Hellen Gloria Terreros Navarro</span></div>
+      <div class="course-tag"><span class="name">Introducción a la Computación</span><span class="prof"><a class="prof-link" href="https://www.linkedin.com/in/ecuadrosv/" target="_blank">Ernesto Cuadros-Vargas</a></span></div>
+      <div class="course-tag"><span class="name">Cálculo I</span><span class="prof"><a class="prof-link" href="https://www.linkedin.com/in/marcos-maravi/" target="_blank">Edwin Marcos Maraví Percca</a></span></div>
+      <div class="course-tag"><span class="name">Álgebra y Geometría Analítica</span><span class="prof"><a class="prof-link" href="https://www.linkedin.com/in/hellen-gloria-terreros-navarro-a62bb5385/" target="_blank">Hellen Gloria Terreros Navarro</a></span></div>
+      <div class="course-tag"><span class="name">Redacción y Técnicas de Comunicación Efectiva</span><span class="prof"><a class="prof-link" href="https://www.linkedin.com/in/ana-eylin-coronel-tello-8934a4140/" target="_blank">Ana Eylin Coronel Tello</a></span></div>
+      <div class="course-tag"><span class="name">Métodos de Estudio Universitario</span><span class="prof"><a class="prof-link" href="https://www.linkedin.com/in/miryam-cosme-felix-22a52140/" target="_blank">Miryam Milagros Cosme Félix</a></span></div>
+      <div class="course-tag"><span class="name">Desarrollo Personal y Liderazgo</span><span class="prof"><a class="prof-link" href="https://www.linkedin.com/in/luz-basualdo-81b88017b/" target="_blank">Luz Basualdo Porras</a></span></div>
       <div class="course-tag"><span class="name">Medio Ambiente y Desarrollo Sostenible</span><span class="prof">Petronila Mérida Fanola Merino</span></div>
-      <div class="course-tag"><span class="name">Introducción a la Computación</span><span class="prof">Ernesto Cuadros Vargas</span></div>
     </div>
   </section>
 
   <section class="card">
     <h2>Red académica</h2>
     <div class="people">
-      <a class="person" href="https://www.linkedin.com/in/ecuadrosv/" target="_blank"><span class="avatar">EC</span>Ernesto Cuadros-Vargas</a>
-      <a class="person" href="https://diegohv36.github.io" target="_blank"><span class="avatar">DH</span>Diego Alonso Huamani Hancco</a>
-      <a class="person" href="https://cristhianpomac-sketch.github.io/" target="_blank"><span class="avatar">CP</span>Cristhian Noe Poma Cupe</a>
-      <a class="person" href="https://aleesullc.github.io/" target="_blank"><span class="avatar">AS</span>Alexandra Sullca Tintaya</a>
-      <a class="person" href="https://emmanuelmendez-cpu.github.io/" target="_blank"><span class="avatar">JM</span>Joel Emmanuel Méndez Rosales</a>
+      <a class="person" href="https://socios.spc.org.pe/ecuadros/" target="_blank">Ernesto Cuadros-Vargas</a>
+      <a class="person" href="https://diegohv36.github.io" target="_blank">Diego Alonso Huamani Hancco</a>
+      <a class="person" href="https://cristhianpomac-sketch.github.io/" target="_blank">Cristhian Noe Poma Cupe</a>
+      <a class="person" href="https://aleesullc.github.io/" target="_blank">Alexandra Sullca Tintaya</a>
+      <a class="person" href="https://emmanuelmendez-cpu.github.io/" target="_blank">Joel Emmanuel Méndez Rosales</a>
     </div>
   </section>
 
   <section class="card">
     <h2>Enlaces de interés</h2>
     <div class="link-list">
-      <a class="plain-link" href="https://www.unmsm.edu.pe/" target="_blank"><span class="avatar">U</span>Universidad Nacional Mayor de San Marcos</a>
-      <a class="plain-link" href="https://sistemas.unmsm.edu.pe/site/index.php" target="_blank"><span class="avatar">F</span>Facultad de Ingeniería de Sistemas e Informática (FISI)</a>
+      <a class="plain-link" href="https://www.unmsm.edu.pe/" target="_blank">Universidad Nacional Mayor de San Marcos</a>
+      <a class="plain-link" href="https://sistemas.unmsm.edu.pe/site/index.php" target="_blank">Facultad de Ingeniería de Sistemas e Informática (FISI)</a>
     </div>
   </section>
 
