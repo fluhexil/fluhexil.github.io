@@ -1,72 +1,368 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="google-site-verification" content="OH6OQQZJzvaFT0SEb2ZiF0JkRcgxWqfa3f0TOSLewX0" />
-    <title>Arturo Rodrigo Avila Becerra | UNMSM | Perfil Académico</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
-            color: #333;
-            text-align: center;
-            padding: 50px;
-        }
-        h1 { color: #007acc; }
-        .contenedor {
-            background-color: white;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            display: inline-block;
-        }
-    </style>
-<body style="margin: 0; padding: 0; background-color: #f4f4f4; font-family: sans-serif; display: flex; justify-content: center;">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="google-site-verification" content="OH6OQQZJzvaFT0SEb2ZiF0JkRcgxWqfa3f0TOSLewX0" />
+<title>Arturo Rodrigo Avila Becerra | UNMSM | Perfil Académico</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg: #f5f6fb;
+    --surface: #ffffff;
+    --ink: #14152b;
+    --muted: #5c5f7a;
+    --line: #e6e7f2;
+    --violet: #6c5ce7;
+    --cyan: #00c2b3;
+    --violet-soft: #efecfe;
+    --cyan-soft: #e3faf7;
+    --ring: rgba(108,92,231,0.35);
+  }
 
-    <div style="background-color: #ffffff; width: 100%; max-width: 800px; padding: 40px; box-sizing: border-box; text-align: left; box-shadow: 0 0 10px rgba(0,0,0,0.1); min-height: 100vh;">
-        
-        <h1 style="text-align: left; margin-top: 0;">Arturo Rodrigo Avila Becerra</h1>
-        
-        <hr style="border: 0; height: 1px; background-color: #ccc; margin-bottom: 20px;">
+  *{ box-sizing: border-box; }
 
-        <h3 style="color: #28a745; text-align: left; margin-top: 25px;">Información Personal</h3>
+  html{ scroll-behavior: smooth; }
 
-        <p style="color: #000000; margin-bottom: 20px;">Soy estudiante de Inteligencia Artificial en la Universidad Nacional Mayor de San Marcos (UNMSM).</p>
-        <p><strong>Correo electrónico:</strong> <a href="mailto:tvartex003@gmail.com">tvartex003@gmail.com</a></p>
-        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/arturo-rodrigo-avila-becerra-150956404/" target="_blank">Arturo Rodrigo Avila Becerra</a></p>
+  body{
+    margin:0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
 
-        <h3 style="color: #28a745; text-align: left; margin-top: 25px;">Información Académica</h3>
-        
-        <p><strong>Universidad:</strong> Universidad Nacional Mayor de San Marcos</p>
-        <p><strong>Facultad:</strong> Ingeniería de Sistemas e Informática</p>
-        <p><strong>Escuela Profesional:</strong> Ingeniería de Inteligencia Artificial</p>
+  a{ color: var(--violet); text-decoration: none; }
+  a:hover{ text-decoration: underline; }
+  a:focus-visible, button:focus-visible{
+    outline: 2px solid var(--violet);
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
 
-      <h3 style="color: #28a745; text-align: left; margin-top: 25px;">Cursos</h3>
+  .wrap{
+    max-width: 880px;
+    margin: 0 auto;
+    padding: 0 24px 80px;
+  }
 
-        <ul style="text-align: left; padding-left: 20px; margin-left: 0;">
-            <li style="margin-bottom: 10px;">Redacción y Técnicas de Comunicación Efectiva - <span style="color: #555; font-style: italic;">Ana Eylin Coronel Tello</span></li>
-            <li style="margin-bottom: 10px;">Métodos de Estudio Universitario - <span style="color: #555; font-style: italic;">Miryam Milagros Cosme Félix</span></li>
-            <li style="margin-bottom: 10px;">Desarrollo Personal y Liderazgo - <span style="color: #555; font-style: italic;">Luz Basualdo Porras</span></li>
-            <li style="margin-bottom: 10px;">Cálculo I - <span style="color: #555; font-style: italic;">Edwin Marcos Maraví Percca</span></li>
-            <li style="margin-bottom: 10px;">Álgebra y Geometría Analítica - <span style="color: #555; font-style: italic;">Hellen Gloria Terreros Navarro</span></li>
-            <li style="margin-bottom: 10px;">Medio Ambiente y Desarrollo Sostenible - <span style="color: #555; font-style: italic;">Petronila Mérida Fanola Merino</span></li>
-            <li style="margin-bottom: 0;">Introducción a la Computación - <span style="color: #555; font-style: italic;">Ernesto Cuadros Vargas</span></li>
-        </ul>
+  /* ---------- HERO ---------- */
+  .hero{
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(135deg, #1c1836 0%, #241b4d 45%, #16303a 100%);
+    color: #fff;
+    padding: 72px 24px 96px;
+  }
 
-                <h3 style="color: #28a745; text-align: left; margin-top: 25px;">Red Académica</h3>
+  .hero-inner{
+    max-width: 880px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+  }
 
-        <p><a href="https://www.linkedin.com/in/ecuadrosv/" target="_blank">Ernesto Cuadros-Vargas</a></p>
-        <p><a href="https://diegohv36.github.io" target="_blank">Diego Alonso Huamani Hancco</a></p>
-        <p><a href="https://cristhianpomac-sketch.github.io/" target="_blank">Cristhian Noe Poma Cupe</a></p>
-        <p><a href="https://aleesullc.github.io/" target="_blank">Alexandra Sullca Tintaya</a></p>
-        <p><a href="https://emmanuelmendez-cpu.github.io/" target="_blank">Joel Emmanuel Méndez Rosales</a></p>
-        
-        <h3 style="color: #28a745; text-align: left; margin-top: 25px;">Enlaces de Interés</h3>
+  .eyebrow{
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #9fd8d0;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 22px;
+  }
+  .eyebrow::before{
+    content:"";
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    background: var(--cyan);
+    box-shadow: 0 0 0 4px rgba(0,194,179,0.2);
+  }
 
-        <p><a href="https://www.unmsm.edu.pe/" target="_blank">Universidad Nacional Mayor de San Marcos</a></p>
-        <p><a href="https://sistemas.unmsm.edu.pe/site/index.php" target="_blank">Facultad de Ingeniería de Sistemas e Informática (FISI)</a></p>
+  .hero h1{
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: clamp(32px, 5vw, 46px);
+    font-weight: 700;
+    margin: 0 0 14px;
+    letter-spacing: -0.01em;
+  }
 
+  .hero p.role{
+    font-size: 17px;
+    color: #d7d6ec;
+    margin: 0 0 28px;
+    max-width: 520px;
+  }
+
+  .hero-links{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .hero-links a{
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.18);
+    padding: 10px 18px;
+    border-radius: 999px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: background 0.2s ease, border-color 0.2s ease, transform 0.15s ease;
+  }
+  .hero-links a:hover{
+    background: rgba(255,255,255,0.16);
+    border-color: rgba(255,255,255,0.32);
+    text-decoration: none;
+    transform: translateY(-1px);
+  }
+
+  /* node network decoration */
+  .nodes{
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    opacity: 0.55;
+  }
+
+  /* ---------- CONTENT ---------- */
+  .content{
+    margin-top: -48px;
+    position: relative;
+    z-index: 3;
+  }
+
+  .card{
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 32px 36px;
+    margin-bottom: 20px;
+    box-shadow: 0 12px 24px -18px rgba(20,21,43,0.25);
+  }
+
+  .card h2{
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--violet);
+    margin: 0 0 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .card h2::after{
+    content:"";
+    flex: 1;
+    height: 1px;
+    background: var(--line);
+  }
+
+  .card p{ margin: 0 0 10px; color: var(--ink); }
+  .card p:last-child{ margin-bottom: 0; }
+
+  .field{
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: 4px 16px;
+    margin-bottom: 10px;
+    font-size: 15px;
+  }
+  .field:last-child{ margin-bottom: 0; }
+  .field dt{
+    color: var(--muted);
+    font-size: 13px;
+    font-weight: 500;
+    padding-top: 2px;
+  }
+  .field dd{ margin: 0; }
+
+  dl.fields{ margin: 0; }
+
+  @media (max-width: 560px){
+    .field{ grid-template-columns: 1fr; gap: 2px; }
+    .field dt{ font-size: 12px; }
+  }
+
+  /* course tags */
+  .courses{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 12px;
+  }
+  .course-tag{
+    background: var(--violet-soft);
+    border: 1px solid #e2ddfb;
+    border-radius: 12px;
+    padding: 14px 16px;
+  }
+  .course-tag .name{
+    font-weight: 600;
+    font-size: 14.5px;
+    display: block;
+    margin-bottom: 4px;
+  }
+  .course-tag .prof{
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    color: var(--muted);
+  }
+
+  /* network / links list */
+  .people, .link-list{
+    display: grid;
+    gap: 10px;
+  }
+  .person, .plain-link{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 14px;
+    border-radius: 10px;
+    background: var(--cyan-soft);
+    border: 1px solid #d3f2ee;
+    font-size: 14.5px;
+    font-weight: 500;
+    color: var(--ink);
+    transition: background 0.15s ease;
+  }
+  .person:hover, .plain-link:hover{
+    background: #d3f2ee;
+    text-decoration: none;
+  }
+  .avatar{
+    width: 30px; height: 30px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--violet), var(--cyan));
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+
+  footer{
+    text-align: center;
+    color: var(--muted);
+    font-size: 13px;
+    margin-top: 40px;
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    html{ scroll-behavior: auto; }
+  }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <svg class="nodes" viewBox="0 0 880 320" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+    <g stroke="#7d76d9" stroke-width="1" opacity="0.5">
+      <line x1="60" y1="60" x2="200" y2="120"/>
+      <line x1="200" y1="120" x2="360" y2="70"/>
+      <line x1="360" y1="70" x2="520" y2="140"/>
+      <line x1="200" y1="120" x2="260" y2="230"/>
+      <line x1="520" y1="140" x2="680" y2="90"/>
+      <line x1="520" y1="140" x2="600" y2="240"/>
+      <line x1="680" y1="90" x2="820" y2="150"/>
+      <line x1="260" y1="230" x2="440" y2="260"/>
+      <line x1="440" y1="260" x2="600" y2="240"/>
+    </g>
+    <g fill="#00c2b3">
+      <circle cx="60" cy="60" r="4"/>
+      <circle cx="360" cy="70" r="3"/>
+      <circle cx="680" cy="90" r="4"/>
+      <circle cx="820" cy="150" r="3"/>
+    </g>
+    <g fill="#6c5ce7">
+      <circle cx="200" cy="120" r="5"/>
+      <circle cx="520" cy="140" r="5"/>
+      <circle cx="260" cy="230" r="3"/>
+      <circle cx="440" cy="260" r="4"/>
+      <circle cx="600" cy="240" r="4"/>
+    </g>
+  </svg>
+
+  <div class="hero-inner">
+    <span class="eyebrow">Perfil académico</span>
+    <h1>Arturo Rodrigo Avila Becerra</h1>
+    <p class="role">Estudiante de Ingeniería de Inteligencia Artificial en la Universidad Nacional Mayor de San Marcos (UNMSM).</p>
+    <div class="hero-links">
+      <a href="mailto:tvartex003@gmail.com">✉ tvartex003@gmail.com</a>
+      <a href="https://www.linkedin.com/in/arturo-rodrigo-avila-becerra-150956404/" target="_blank">LinkedIn</a>
     </div>
+  </div>
+</div>
+
+<div class="wrap content">
+
+  <section class="card">
+    <h2>Información académica</h2>
+    <dl class="fields">
+      <div class="field">
+        <dt>Universidad</dt>
+        <dd>Universidad Nacional Mayor de San Marcos</dd>
+      </div>
+      <div class="field">
+        <dt>Facultad</dt>
+        <dd>Ingeniería de Sistemas e Informática</dd>
+      </div>
+      <div class="field">
+        <dt>Escuela profesional</dt>
+        <dd>Ingeniería de Inteligencia Artificial</dd>
+      </div>
+    </dl>
+  </section>
+
+  <section class="card">
+    <h2>Cursos</h2>
+    <div class="courses">
+      <div class="course-tag"><span class="name">Redacción y Técnicas de Comunicación Efectiva</span><span class="prof">Ana Eylin Coronel Tello</span></div>
+      <div class="course-tag"><span class="name">Métodos de Estudio Universitario</span><span class="prof">Miryam Milagros Cosme Félix</span></div>
+      <div class="course-tag"><span class="name">Desarrollo Personal y Liderazgo</span><span class="prof">Luz Basualdo Porras</span></div>
+      <div class="course-tag"><span class="name">Cálculo I</span><span class="prof">Edwin Marcos Maraví Percca</span></div>
+      <div class="course-tag"><span class="name">Álgebra y Geometría Analítica</span><span class="prof">Hellen Gloria Terreros Navarro</span></div>
+      <div class="course-tag"><span class="name">Medio Ambiente y Desarrollo Sostenible</span><span class="prof">Petronila Mérida Fanola Merino</span></div>
+      <div class="course-tag"><span class="name">Introducción a la Computación</span><span class="prof">Ernesto Cuadros Vargas</span></div>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>Red académica</h2>
+    <div class="people">
+      <a class="person" href="https://www.linkedin.com/in/ecuadrosv/" target="_blank"><span class="avatar">EC</span>Ernesto Cuadros-Vargas</a>
+      <a class="person" href="https://diegohv36.github.io" target="_blank"><span class="avatar">DH</span>Diego Alonso Huamani Hancco</a>
+      <a class="person" href="https://cristhianpomac-sketch.github.io/" target="_blank"><span class="avatar">CP</span>Cristhian Noe Poma Cupe</a>
+      <a class="person" href="https://aleesullc.github.io/" target="_blank"><span class="avatar">AS</span>Alexandra Sullca Tintaya</a>
+      <a class="person" href="https://emmanuelmendez-cpu.github.io/" target="_blank"><span class="avatar">JM</span>Joel Emmanuel Méndez Rosales</a>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>Enlaces de interés</h2>
+    <div class="link-list">
+      <a class="plain-link" href="https://www.unmsm.edu.pe/" target="_blank"><span class="avatar">U</span>Universidad Nacional Mayor de San Marcos</a>
+      <a class="plain-link" href="https://sistemas.unmsm.edu.pe/site/index.php" target="_blank"><span class="avatar">F</span>Facultad de Ingeniería de Sistemas e Informática (FISI)</a>
+    </div>
+  </section>
+
+  <footer>Actualizado 2026 · UNMSM</footer>
+
+</div>
 
 </body>
+</html>
